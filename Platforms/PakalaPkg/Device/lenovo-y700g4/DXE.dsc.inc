@@ -1,4 +1,5 @@
 [Components.common]
+$(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Applications/EfiBootMenu/EfiBootMenu.inf
 AndromedaPkg/Driver/RamPartitionDxe/RamPartitionDxe.inf
 
 $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/QcomPkg/Drivers/EnvDxe/EnvDxeEnhanced.inf
@@ -89,3 +90,6 @@ $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/QcomWDogDxe.inf
 #$(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/DisplayDxe.inf
 #AndromedaPkg/Driver/DisplayCallerDxe/DisplayCallerDxe.inf
 AndromedaPkg/Driver/SimpleFbDxe/SimpleFbDxe.inf
+
+[LibraryClasses.AARCH64]
+PlatformBootPickerLib|$(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Library/PlatformBootPickerLib/PlatformBootPickerLib.inf

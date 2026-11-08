@@ -1,3 +1,7 @@
+[PcdsFixedAtBuild.AARCH64]
+# The EFI picker supplies its own three-second timeout.
+gEfiMdePkgTokenSpaceGuid.PcdPlatformBootTimeOut|0
+
 [PcdsFixedAtBuild.common]
 gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1904
 gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|3040

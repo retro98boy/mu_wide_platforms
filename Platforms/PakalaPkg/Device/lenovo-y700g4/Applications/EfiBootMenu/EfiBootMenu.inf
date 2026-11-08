@@ -1,0 +1,39 @@
+[Defines]
+  INF_VERSION = 0x00010005
+  BASE_NAME = EfiBootMenu
+  FILE_GUID = 87503222-9D17-4503-AB62-DFC783604308
+  MODULE_TYPE = UEFI_APPLICATION
+  ENTRY_POINT = UefiMain
+[Sources]
+  EfiBootMenu.c
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  QcomModulePkg/QcomModulePkg.dec
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiBootServicesTableLib
+  UefiBootManagerLib
+  UefiLib
+  DevicePathLib
+  MemoryAllocationLib
+  BaseMemoryLib
+  BaseLib
+  PrintLib
+  PeCoffLib
+[Protocols]
+  gEfiBlockIoProtocolGuid
+  gEfiSimpleFileSystemProtocolGuid
+  gEfiPartitionInfoProtocolGuid
+  gEfiGraphicsOutputProtocolGuid
+  gEfiHiiFontProtocolGuid
+[Guids]
+  gEfiSdRemovableGuid
+  gEfiUfsLU0Guid
+  gEfiUfsLU1Guid
+  gEfiUfsLU2Guid
+  gEfiUfsLU3Guid
+  gEfiUfsLU4Guid
+  gEfiUfsLU5Guid
+  gEfiUfsLU6Guid
+  gEfiUfsLU7Guid

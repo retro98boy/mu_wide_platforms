@@ -38,6 +38,7 @@
   DevicePathLib
   UefiBootServicesTableLib
   UefiRuntimeServicesTableLib
+  PlatformBootPickerLib
   MsPlatformDevicesLib
   MsNetworkDependencyLib
   MsBootOptionsLib

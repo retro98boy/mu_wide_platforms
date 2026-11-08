@@ -1,3 +1,4 @@
+INF $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Applications/EfiBootMenu/EfiBootMenu.inf
 #FILE FREEFORM = DDE58710-41CD-4306-DBFB-3FA90BB1D2DD {
 #    SECTION UI = "uefiplat.cfg"
 #    SECTION RAW = $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Binaries/RawFiles/uefiplat.cfg
