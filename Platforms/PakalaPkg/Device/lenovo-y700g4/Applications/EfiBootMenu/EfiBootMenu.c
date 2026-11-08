@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: BSD-2-Clause-Patent
 // Local EFI picker application; returning hands control back to standard BDS.
-// Use standard console arrows and Enter for selection.
+// PmicKeysDxe maps volume +/- to arrows and power to Enter.
 #include <Uefi.h>
 #include <Protocol/BlockIo.h>
 #include <Protocol/PartitionInfo.h>
