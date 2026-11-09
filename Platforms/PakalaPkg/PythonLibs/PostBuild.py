@@ -2,6 +2,8 @@ import logging
 import gzip
 import os
 import sys
+import json
+import subprocess
 import mkbootimg
 
 # This Function Generate Boot Header Version 3 Android Boot Image.
@@ -41,5 +43,19 @@ def makeAndroidImage(outputbin_dir, output_dir, root_dir, device_name, dtb_name)
         "--os_version", "13.0.0",
         "--os_patch_level", "2023-04-01"
     ])
+
+    config_path = os.path.join(root_dir, 'Platforms', 'PakalaPkg', 'Device',
+                               device_name, 'bootpack.json')
+    if os.path.isfile(config_path):
+        with open(config_path, 'r') as config_file:
+            avb_args = json.load(config_file).get('avb_args')
+        if avb_args:
+            try:
+                subprocess.run([os.environ.get('AVBTOOL', 'avbtool'),
+                                'add_hash_footer', '--image', output_path] + avb_args,
+                               check=True)
+            except (OSError, subprocess.CalledProcessError):
+                os.unlink(output_path)
+                raise
 
 #        "--ramdisk", "./ImageResources/emptyramdisk",
