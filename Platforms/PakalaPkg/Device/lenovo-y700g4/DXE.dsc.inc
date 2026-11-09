@@ -92,4 +92,5 @@ $(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/PatchedBinaries/QcomWDogDxe.inf
 AndromedaPkg/Driver/SimpleFbDxe/SimpleFbDxe.inf
 
 [LibraryClasses.AARCH64]
+MsPlatformDevicesLib|$(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Library/MsPlatformDevicesLib/MsPlatformDevicesLib.inf
 PlatformBootPickerLib|$(PACKAGE_NAME)/Device/$(TARGET_DEVICE)/Library/PlatformBootPickerLib/PlatformBootPickerLib.inf
