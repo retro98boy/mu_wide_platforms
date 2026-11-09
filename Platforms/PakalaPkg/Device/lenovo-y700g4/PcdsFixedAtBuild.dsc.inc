@@ -13,9 +13,9 @@ gAndromedaPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|3040
 # Smbios Info
 gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemBrand|"Lenovo"
 gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailSku|"NULL"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"Y700"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"4"
-gAndromedaPkgTokenSpaceGuid.PcdSmbiosBoardModel|"NULL"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemRetailModel|"Gen4"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosSystemModel|"Y700"
+gAndromedaPkgTokenSpaceGuid.PcdSmbiosBoardModel|"Y700"
 
 gAndromedaPkgTokenSpaceGuid.PcdABLProduct|"sun"
 
